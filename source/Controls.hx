@@ -383,8 +383,8 @@ class Controls extends FlxActionSet
 		setKeyboardScheme(scheme, false);
 	}
 	#end
-    
-    #if android
+	
+	#if android
 	public var trackedinputsUI:Array<FlxActionInput> = [];
 	public var trackedinputsNOTES:Array<FlxActionInput> = [];
 
@@ -514,7 +514,8 @@ class Controls extends FlxActionSet
 			}
 		}
 	}
-	#end
+	#end	
+
 	override function update()
 	{
 		super.update();
@@ -709,8 +710,8 @@ class Controls extends FlxActionSet
 			}
 		}
 	}
-    
-    #if !android
+	
+	#if !android
 	public function bindKeys(control:Control, keys:Array<FlxKey>)
 	{
 		var copyKeys:Array<FlxKey> = keys.copy();
