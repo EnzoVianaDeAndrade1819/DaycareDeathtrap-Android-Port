@@ -1,6 +1,6 @@
 package;
 
-if !android
+#if !android
 import Sys.sleep;
 import discord_rpc.DiscordRpc;
 
