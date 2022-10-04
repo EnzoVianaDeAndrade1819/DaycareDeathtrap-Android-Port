@@ -120,7 +120,6 @@ class OptionsState extends MusicBeatState
 		#if android
 		if (virtualPad.buttonC.justPressed) {
 		        MusicBeatState.switchState(new android.AndroidControlsSubState());
-	}
 	#end
 	
 	function changeSelection(change:Int = 0) {
