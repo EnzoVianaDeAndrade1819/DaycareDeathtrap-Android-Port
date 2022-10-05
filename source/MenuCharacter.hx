@@ -64,7 +64,7 @@ class MenuCharacter extends FlxSprite
 				#else
 				var path:String = Paths.getPreloadPath(characterPath);
 				if(!Assets.exists(path)) {
-					path = SUtil.getPath() + Paths.getPreloadPath('images/menucharacters/' + DEFAULT_CHARACTER + '.json');
+					path = Paths.getPreloadPath('images/menucharacters/' + DEFAULT_CHARACTER + '.json');
 				}
 				rawJson = Assets.getText(path);
 				#end
